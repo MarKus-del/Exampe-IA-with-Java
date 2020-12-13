@@ -13,7 +13,7 @@ public class RecomendaFilmes {
     public static void main(String[] args) throws IOException, TasteException{
         DataModel filmes = new Recomendador().getModeloDeFilmes();
         Recommender recommender = new RecomendadorBuilder().buildRecommender(filmes);
-        List<RecommendedItem> recommendations = recommender.recommend(4, 3);
+        List<RecommendedItem> recommendations = recommender.recommend(8, 4);
 
         for (RecommendedItem recommendedItem : recommendations){
             System.out.println("Você pode gostar deste filme :");
