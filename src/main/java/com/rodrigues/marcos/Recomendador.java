@@ -18,6 +18,5 @@ public class Recomendador {
     }
 
     public DataModel getModeloDeFilmes() throws  IOException{
-        return getModelo("filmes.csv");
-    }
+        return getModelo("filmes.csv");    }
  }
